@@ -15,17 +15,11 @@ class BMICalculator extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         primaryColor: Color(0xff111428),
         scaffoldBackgroundColor: Color(0xff111428),
         shadowColor: Color(0xFFEEF1F9),
-        /*accentColor: Color(0xff81CB82),
-        canvasColor: Colors.amberAccent,
-        textTheme: TextTheme(
-          bodyText2: TextStyle(color: Colors.white),
-        )
-        dividerColor: Color(0xFFEEF1F9),
-        hoverColor: Color(0xFF4DF214),*/
       ),
       initialRoute: '/',
       routes: {
@@ -36,13 +30,3 @@ class BMICalculator extends StatelessWidget {
     );
   }
 }
-
-/*floatingActionButton: Theme(
-        data: ThemeData(
-          accentColor: Color(0xff81CB82),
-        ),
-        child: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.volunteer_activism),
-        ),
-      ),*/
